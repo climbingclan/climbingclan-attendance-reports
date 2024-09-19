@@ -1,4 +1,4 @@
-# Project Name
+# Climbing Clan Attendance Reports
 
 This project appears to be a set of Google Apps Script functions for managing and reporting on attendance, volunteering, and member data, likely for a club or organization.
 
