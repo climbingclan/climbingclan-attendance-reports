@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tdobson/qms-audit-project.git"
+    "url": "git+https://github.com/climbingclan/climbingclan-attendance-reports.git"
   },
   "author": "Tim Dobson",
-  "license": "All Rights Reserved",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/climbingclan/climbingclan-attendance-reports/issues"
   },
