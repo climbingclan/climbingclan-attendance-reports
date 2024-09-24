@@ -1,7 +1,3 @@
-var apidomain="climbingclan.com"
-var apiusername="ck_3f8cd172e7aed36533d434e04e8c0b2affe19075"
-var apipassword="cs_817f3cd22ae28bc33fa716a6fdfd707188c0409b"
-
 
 
 

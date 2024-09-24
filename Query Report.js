@@ -1,16 +1,20 @@
-var server = '18.168.242.164';
-var port = 3306;
-var dbName = 'bitnami_wordpress';
-var username = 'gsheets';
-var password = 'eyai4yohF4uX8eeP7phoob';
-var url = 'jdbc:mysql://'+server+':'+port+'/'+dbName;
+const scriptProperties = PropertiesService.getScriptProperties();
 
+const server = scriptProperties.getProperty('cred_server');
+const port = parseInt(scriptProperties.getProperty('cred_port'), 10);
+const dbName = scriptProperties.getProperty('cred_dbName');
+const username = scriptProperties.getProperty('cred_username');
+const password = scriptProperties.getProperty('cred_password');
+const url = `jdbc:mysql://${server}:${port}/${dbName}`;
+const apidomain = scriptProperties.getProperty('cred_apidomain');
+const apiusername = scriptProperties.getProperty('cred_apiusername');
+const apipassword = scriptProperties.getProperty('cred_apipassword');
 
 
 function readAllData() {
  var conn = Jdbc.getConnection(url, username, password);
  var stmt = conn.createStatement();
- 
+
 
 let cell = setupCell("Dashboard","B4")
 let sheet = setupSheet("Event Attendance")
@@ -24,5 +28,5 @@ stmt.close();
 
 
 
-} 
+}
 
